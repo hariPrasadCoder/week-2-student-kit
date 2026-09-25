@@ -1,0 +1,26 @@
+# Local notebook environment
+jupyterlab
+ipykernel
+
+# Shared utilities
+python-dotenv
+pypdf
+numpy
+pandas
+aiohttp
+brotli
+
+# Lesson 1: Basic RAG
+pinecone
+langchain-core
+langchain-google-genai
+
+# Lesson 2: Advanced RAG
+openai
+exa-py
+networkx
+
+# Lesson 3: Advanced retrieval
+rank-bm25
+sentence-transformers
+

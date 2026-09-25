@@ -45,6 +45,29 @@ files to Google Colab.
 Run notebooks from inside their lesson folder so relative paths to PDFs and
 other files continue to work.
 
+## Run locally with the shared virtual environment
+
+The repository includes one shared environment for all three lessons. From the
+repository root:
+
+```bash
+source .venv/bin/activate
+jupyter lab
+```
+
+In Jupyter or VS Code, select the kernel named **Python (Week 2 RAG)**. Then
+open a notebook and run it from its lesson folder so the relative data paths
+resolve correctly.
+
+To recreate the environment later:
+
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+python -m pip install -r requirements.txt
+python -m ipykernel install --user --name week-2-rag --display-name "Python (Week 2 RAG)"
+```
+
 ## API keys
 
 The lessons use different services:
@@ -64,4 +87,3 @@ These notebooks are teaching examples, not production systems. They use small
 datasets, simplified routing and safety checks, and in-memory components where
 possible. The companies, products, people, incidents, policies, and figures in
 the sample documents are fictional training material.
-
