@@ -214,13 +214,12 @@ The final table summarizes which retrieval engine fits each information shape. T
 |-- 01_advanced_rag_101.ipynb
 |-- README.md
 |-- .env.example
-`-- output/
-    `-- pdf/
-        |-- 01_customer_returns_policy.pdf
-        |-- 02_vendor_governance_manual.pdf
-        |-- 03_project_atlas_brief.pdf
-        |-- 04_q3_operations_report.pdf
-        `-- 05_incident_and_risk_review.pdf
+`-- data/
+    |-- 01_customer_returns_policy.pdf
+    |-- 02_vendor_governance_manual.pdf
+    |-- 03_project_atlas_brief.pdf
+    |-- 04_q3_operations_report.pdf
+    `-- 05_incident_and_risk_review.pdf
 ```
 
 ## Setup
@@ -267,7 +266,7 @@ These choices keep the teaching environment small. They should not be copied unc
 
 ### The notebook cannot find the PDFs
 
-Confirm that the current working directory is `02-advanced-rag` and that `output/pdf/` contains five files.
+Confirm that the current working directory is `02-advanced-rag` and that `data/` contains five files.
 
 ### An API key prompt appears
 
